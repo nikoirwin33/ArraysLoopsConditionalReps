@@ -139,8 +139,23 @@ const favMovies2 = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+// Remove Eggbert (hint look at the slice/splice method(s))
 
+// console.log(whereIsWaldo.slice(0,1,2))
+
+// Change "Neff" to "No One"
+// come back to this NEEDS WORK
+whereIsWaldo.splice(3,-1, "No One")
+// console.log(whereIsWaldo),
+// whereIsWaldo.slice(0,3,2)
+// whereIsWaldo.pop(3,2)
+// console.log(whereIsWaldo)
+
+         // NEEDS WORK
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
