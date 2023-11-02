@@ -1,3 +1,6 @@
+//================================================
+//                JavaScript Reps
+//=================================================
 ////////////////////////////////
 // Easy Going
 ////////////////////////////////
@@ -51,6 +54,22 @@ wolfy[0] = "GAMEBOY"
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
+//1.Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
+
+const ninjaturtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
+
+// 2.Use a for of loop(not a typo - try it out! Try a for ofloop) to call toUpperCase()on each of them and print out the result.
+
+
+
+for(const ninjaturtle of ninjaturtles) {
+  
+  // console.log(ninjaturtle.toUpperCase());
+
+
+}
+ 
+
 
 
 ////////////////////////////////
