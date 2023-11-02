@@ -69,13 +69,72 @@ for(const ninjaturtle of ninjaturtles) {
 
 }
  
-
-
-
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Taken', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+//-- Console log: the index of Titanic
+
+// console.log(favMovies[8]);
+
+//1. use the .sortmethod Thought question: what did this do to the array? Did it permanently alter it? Yes it altered the whole array. It mixed the array of favMovies. 
+
+// console.log(favMovies.sort());
+
+// 2.Use the method pop
+// returns last element 
+
+// console.log(favMovies.pop());
+
+// 3.push"Guardians of the Galaxy"
+// adds element at end of array
+favMovies.push('Guardians of the Galaxy');
+
+// console.log(favMovies);
+
+// 4.Reverse the array
+
+// console.log(favMovies.reverse());
+
+// 5.Use the shiftmethod
+// removes the first element from an array and returns that removed element. 
+
+// console.log(favMovies.shift());
+
+// 6.unshift- what does it return?
+// just returning unshift I get a value I don't understand yet. 
+favMovies.unshift('Dodgeball')
+// console.log(favMovies);
+
+// returns a value of 21 I'm not sure about 
+// console.log(favMovies.unshift());
+
+// 7. splice"Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
+favMovies.splice(4,1, 'Avatar');
+// console.log(favMovies);
+
+// 8.slice the last half of the array (challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it) - Thought question: did this permanently alter our array? -- Yes It sliced the top portion of the array.
+// returns a shallow copy of a portion of an array, into a new array object selected from start to end. Start and end represent the index of items in that array.
+
+// console.log(favMovies.slice(0,9));
+
+// 9.store the value of your slice in a variable - Thought question: what is going on here? Its the top half of the inital array list. 
+
+const favMovies2 = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian']
+
+// 10.console.log your final results
+
+// console.log(favMovies2)
+
+// 11.After running the above tasks, console.log the index of "Fast and Furious" -We removed it from the array, what value do we get when we look for the index of something that is not in the array?
+// the value we would get from something that is not in a array is 'undefined'. 
+
+// console.log(favMovies2[10]);
+
+// 12.Thought question: that we declared the variable favMovies with const, and yet, we were allowed to change the array. Weird? Should we have used let?
+// elements within an array declared with keyword const, remain mutable. Meaning that we can change the contents of a const array, but cannot reassign a new array or different value. 
 
 ////////////////////////////////
 // Where is Waldo
